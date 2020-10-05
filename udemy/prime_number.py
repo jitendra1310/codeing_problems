@@ -5,6 +5,10 @@ class Prime:
         num = input("Enter a number: ")
         self.num = int(num)
     
+    """ 
+    Description: 
+    Complexcity: O(N/2)
+    """
             
     def method1(self):  
         print(math.floor(math.sqrt(self.num)))      
@@ -14,7 +18,10 @@ class Prime:
         
         return True
     
-    
+    """ 
+    Description: 
+    Complexcity: O(N)
+    """
     def method2(self):
         i=2
         while (i <= self.num):
