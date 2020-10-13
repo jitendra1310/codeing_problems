@@ -1,6 +1,6 @@
 """
-Check The 
-
+Check The Balanced Brackets
+Youetube: https://www.youtube.com/watch?v=QZOLb0xHB_Q
 """
 class balancedBrackets:
     
@@ -14,7 +14,7 @@ class balancedBrackets:
             value = expression[i]
             if value in ['[','(','{']:
                 self.stack.append(value)
-            elif value in [')','}',']']:                        
+            elif value in [')','}',']']:
                 if value == ')' and self.stack[-1] == '(':
                     self.stack.pop()
                 elif value == '}' and self.stack[-1] == '{':
