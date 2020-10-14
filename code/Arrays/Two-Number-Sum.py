@@ -52,7 +52,7 @@ class TwoNumberSum:
                 if inputArray[i]+inputArray[j] == target:
                     print(inputArray[i]+inputArray[j])
                     return True
-        return Falsea
+        return False
     
     """
     Hash Table
