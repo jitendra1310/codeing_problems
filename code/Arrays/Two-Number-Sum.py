@@ -27,7 +27,7 @@ Constraints:
 Only one valid answer exists.
 """
 
-
+#https://www.youtube.com/watch?v=gCin6Qz-eJQ
 class TwoNumberSum:
     """
     Approch: Bruteforce
@@ -70,23 +70,24 @@ class TwoNumberSum:
         return False
     """
     Approch 3:
+    https://www.youtube.com/watch?v=s1xA_K1JReo
     Array Must be sorted Array
     """
     #Time complexity: O(n)
     #Space complexity: O(1)
     
     def approchTwoSum(self, inputArray, target):
-        i = 0
-        j = len(inputArray) -1
+        l = 0 #left index
+        r = len(inputArray) -1 #Right index
         
-        while i<=j:
-            if inputArray[i]+inputArray[j] == target:
-                print(inputArray[i],inputArray[j])
+        while l<=r:
+            if inputArray[l]+inputArray[r] == target:
+                print(inputArray[l],inputArray[r])
                 return True
-            elif inputArray[i]+inputArray[j] < target:
-                i += 1
-            elif inputArray[i]+inputArray[j] > target:
-                j -=1 
+            elif inputArray[l]+inputArray[r] < target:
+                l += 1
+            elif inputArray[l]+inputArray[r] > target:
+                r -=1 
         return False    
    
 
