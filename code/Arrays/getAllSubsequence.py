@@ -30,7 +30,7 @@ Constraints:
 0 <= s.length <= 100
 0 <= t.length <= 10^4
 Both strings consists only of lowercase characters.
-"""
+""" 
 class StingSubsequence:
     """
     https://www.youtube.com/watch?v=gZaIJtqk4HM
@@ -39,10 +39,10 @@ class StingSubsequence:
     def isSubsequence(self, s: str, t: str) -> bool:
         if(s==""): return True        
         index = 0
-        for i in range(len(t)-1):
-            if s[index]==t[i]:
+        for i in range(len(t)):
+            if t[i]==s[index]:
                 index +=1
-            if index == len(s)-1:
+            if index >= len(s):
                 return True
         return False
     
@@ -67,6 +67,6 @@ class StingSubsequence:
         return result
     
         
-#obj = StingSubsequence()
-#print(obj.isSubsequence('acb','ahbgdc'))
+obj = StingSubsequence()
+print(obj.isSubsequence('bb','ahbgdc'))
 #print(obj.getAllSubsequences('abcd'))        
