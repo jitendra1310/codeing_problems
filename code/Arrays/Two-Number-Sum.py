@@ -94,4 +94,4 @@ class TwoNumberSum:
 
 #calling
 obj = TwoNumberSum()
-print(obj.approchTwoSum([2,7,11,15],9))
+print(obj.approchHashTable([2,7,11,15],9))
