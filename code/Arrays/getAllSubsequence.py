@@ -33,7 +33,7 @@ Both strings consists only of lowercase characters.
 """ 
 class StingSubsequence:
     """
-    https://www.youtube.com/watch?v=gZaIJtqk4HM
+    https://www.youtube.com/watch?v=UulHAjxjZ4o
     get all the subsequence of the string 
     """
     def isSubsequence(self, s: str, t: str) -> bool:

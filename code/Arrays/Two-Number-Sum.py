@@ -91,7 +91,11 @@ class TwoNumberSum:
         return False    
    
 
-
+    def MyApprochSum(self,inputArray,target)-> bool:
+        for i in range(len(inputArray)-1):
+            if(target - inputArray[i]) in set(inputArray[i+1:]):
+                return True
+        return False
 #calling
 obj = TwoNumberSum()
-print(obj.approchHashTable([2,7,11,15],9))
+print(obj.MyApprochSum([2,7,11,15],2))
